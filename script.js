@@ -3,7 +3,10 @@ function preload() {
 }
 
 function setup() {
-  console.log(table);
+  let rows = table.rows;
+  for (let words in rows) {
+    console.log(words.arr[0] + " " + words.arr[1]);
+  }
   createCanvas(400, 400);
 }
 
